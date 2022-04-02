@@ -1,0 +1,29 @@
+body {
+  color: #212121;
+}
+
+.button {
+  background-color: #f5f4fa;
+  color: #212121;
+}
+.button:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.hero-button {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.link {
+  color: #757575;
+}
+.link:hover {
+  color: #2196f3;
+}
+.link:focus {
+  color: #2196f3;
+}
