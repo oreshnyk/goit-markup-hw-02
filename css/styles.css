@@ -25,6 +25,9 @@
 body {
   background-color: var(--main-background-color);
   color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
 }
 address {
   font-style: normal;
@@ -88,6 +91,31 @@ address {
 }
 .section-title {
   color: var(--secondary-text-color);
+
+  width: 376px;
+  height: 42px;
+  left: 612px;
+  top: 969px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  letter-spacing: 0.03em;
+}
+
+.hero-heading {
+  width: 696px;
+  height: 120px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 /* Кнопка */
@@ -119,7 +147,39 @@ address {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  display: flex;
+
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
 }
+
+.button-center {
+  width: 136px;
+  height: 30px;
+  left: 732px;
+  top: 440px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
 .map {
   color: #ffffff;
 }
@@ -160,27 +220,6 @@ address {
   top: 80px;
   background-color: #2f303a;
 }
-.hero-heading {
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  
-
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-
 
 .site-nav {
   position: absolute;
