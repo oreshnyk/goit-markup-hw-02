@@ -1,25 +1,212 @@
-body {
-  color: #212121;
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
+  --main-background-color: #e5e5e5;
+  --secondary-background-color: #f5f4fa;
+  --header-color: #2f303a;
 }
 
+/* Основной цвет текста #757575 */
+
+/* Вторичный цвет текста #212121 */
+
+/* Белый #FFFFFF */
+
+/* Акцент #2196F3 */
+
+/* Фон основной #E5E5E5 */
+
+/* Фон шапка #2F303A */
+
+/* Вторичный фон #F5F4FA */
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--primary-text-color);
+}
+address {
+  font-style: normal;
+}
+.logo-header {
+  /*position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+
+  letter-spacing: 0.03em;*/
+
+  color: var(--accent-color);
+
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/* Site nav */
+.site-nav {
+  position: absolute;
+  width: 49px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+}
+.contact {
+  position: absolute;
+  width: 135px;
+  height: 16px;
+  left: 1078px;
+  top: 32px;
+}
+.site-nav .link {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.contact .link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
+.section-title {
+  color: var(--secondary-text-color);
+}
+
+/* Кнопка */
 .button {
-  background-color: #f5f4fa;
-  color: #212121;
+  cursor: pointer;
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+  border-radius: 4px;
+
+  width: 145px;
+  height: 38px;
 }
 .button:hover {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--secondary-background-color);
 }
 .button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--secondary-background-color);
 }
 .hero-button {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  cursor: pointer;
+
+  width: 136px;
+  height: 30px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.map {
   color: #ffffff;
 }
-.link {
-  color: #757575;
+.address .link {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
+
+.footer .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+/*
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #ffffff;
+  --logo-color: #2196f3;
+  --primary-bg-color: #e5e5e5;
+}
+.navigation {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+
+  background-color: #ffffff;
+}
+.hero {
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background-color: #2f303a;
+}
+.hero-heading {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+
+.site-nav {
+  position: absolute;
+  width: 49px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+}
+.link-studio {
+  position: absolute;
+  width: 49px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+}
+.link-portfolio {
+  position: absolute;
+  width: 77px;
+  height: 16px;
+  left: 552px;
+  top: 32px;
+}
+
+.address-links .link {
+  text-decoration: none;
+  color: #212121;
 }
 .link:hover {
   color: #2196f3;
@@ -27,3 +214,87 @@ body {
 .link:focus {
   color: #2196f3;
 }
+.link-contact {
+  color: #757575;
+}
+.link-contact:hover {
+  color: #2196f3;
+}
+.link-contact:focus {
+  color: #2196f3;
+}
+.link-contact-footer {
+  position: absolute;
+  width: 231px;
+  height: 21px;
+  left: 215px;
+  top: 2238px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+ 
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+address {
+  font-style: normal;
+}
+
+
+.footer {
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+
+  background: #2f303a;
+}
+.logo-footer {
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 2157px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+ 
+
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.logo-black {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+
+  background-color: #ffffff;
+  color: #212121;
+
+  text-decoration: none;
+}
+.logo-white {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+*/
