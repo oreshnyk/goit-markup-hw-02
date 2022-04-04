@@ -172,13 +172,10 @@ address {
   left: 700px;
   top: 430px;
 
-  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
   letter-spacing: 0.06em;
-
-  color: #ffffff;
 }
 
 .button-center {
@@ -339,6 +336,55 @@ address {
   color: var(--secondary-background-color);
 }
 
+/* Buttons from portfolio.html    
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12); 
+
+
+*/
+
+.button.all {
+  width: 73px;
+  left: 495px;
+}
+
+.button.site {
+  width: 128px;
+  left: 576px;
+}
+
+.button.app {
+  width: 145px;
+  left: 712px;
+}
+
+.button.design {
+  width: 103px;
+  left: 865px;
+}
+
+.button.marketing {
+  width: 130px;
+  left: 976px;
+}
+
+.button.marketing:hover,
+.button.marketing:focus,
+.button.design:hover,
+.button.design:focus,
+.button.app:hover,
+.button.app:focus,
+.button.site:hover,
+.button.site:focus,
+.button.all:hover,
+.button.all:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Footer */
+/* Links */
 .map {
   color: var(--white-color);
   text-decoration: none;
@@ -356,6 +402,40 @@ address {
 .address .link:focus {
   color: var(--accent-color);
 }
+
+/* Filters */
+.filter-button {
+  height: 26px;
+  top: 180px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  letter-spacing: 0.03em;
+}
+
+.filter-button.all {
+  width: 29px;
+  left: 517px;
+}
+.filter-button.site {
+  width: 84px;
+  left: 598px;
+}
+.filter-button.app {
+  width: 101px;
+  left: 734px;
+}
+.filter-button.design {
+  width: 59px;
+  left: 887px;
+}
+.filter-button.marketing {
+  width: 86px;
+  left: 998px;
+}
+
 /*
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
