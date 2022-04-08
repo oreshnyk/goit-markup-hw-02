@@ -3,7 +3,7 @@
   --secondary-text-color: #212121;
   --white-color: #ffffff;
   --accent-color: #2196f3;
-  --main-background-color: #e5e5e5;
+  --main-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --footer-color: #2f303a;
 }
@@ -23,10 +23,10 @@
 /* Вторичный фон #F5F4FA */
 header {
   position: absolute;
-  width: 1600px;
+  /* width: 1600px;
   height: 80px;
   left: 0px;
-  top: 0px;
+  top: 0px; */
 
   background: var(--white-color);
 }
@@ -36,30 +36,37 @@ body {
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 00.03em;
 }
 
 footer {
-  /* position: absolute; */
-  width: 1600px;
+  /* width: 1600px;
   height: 252px;
   left: 0px;
-  top: 2097px;
+  top: 2097px; */
 
   background: var(--footer-color);
 }
 
 address {
   font-style: normal;
+
+  line-height: 24px;
+}
+
+.limit-box {
+  padding: 0 215px;
 }
 
 /* Logo */
 
 .logo-header {
-  position: absolute;
+  /* position: absolute;
   width: 145px;
   height: 31px;
   left: 215px;
-  top: 24px;
+  top: 24px; */
 
   font-family: "Raleway";
   font-weight: 700;
@@ -97,10 +104,10 @@ address {
 }
 
 .logo-footer {
-  width: 145px;
+  /* width: 145px;
   height: 31px;
   left: 215px;
-  top: 2157px;
+  top: 2157px; */
 
   font-family: "Raleway";
   font-weight: 700;
@@ -109,7 +116,7 @@ address {
 
   letter-spacing: 0.03em;
 
-  color: #2196f3;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -121,11 +128,11 @@ address {
 
 /* Site nav */
 .site-nav {
-  position: absolute;
+  /* position: absolute;
   width: 49px;
   height: 16px;
   left: 453px;
-  top: 32px;
+  top: 32px; */
 
   font-weight: 500;
   font-size: 14px;
@@ -133,11 +140,11 @@ address {
   letter-spacing: 0.02em;
 }
 .contact {
-  position: absolute;
+  /* position: absolute;
   width: 135px;
   height: 16px;
   left: 1078px;
-  top: 32px;
+  top: 32px; */
 
   font-weight: 500;
   font-size: 14px;
@@ -166,16 +173,25 @@ address {
 
 /* Hero */
 
+.hero {
+  background-color: var(--footer-color);
+
+  /* width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px; */
+}
+
 .hero-heading {
-  width: 696px;
+  /* width: 696px;
   height: 120px;
   left: 452px;
-  top: 280px;
+  top: 280px; */
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
-
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -187,10 +203,10 @@ address {
   color: var(--white-color);
   cursor: pointer;
 
-  width: 200px;
+  /* width: 200px;
   height: 50px;
   left: 700px;
-  top: 430px;
+  top: 430px; */
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -202,10 +218,10 @@ address {
 .button-center {
   /* Заказать услугу */
 
-  width: 136px;
+  /* width: 136px;
   height: 30px;
   left: 732px;
-  top: 440px;
+  top: 440px; */
 
   font-weight: 700;
   font-size: 16px;
@@ -218,11 +234,11 @@ address {
 
 .features .title {
   color: var(--secondary-text-color);
-
+  /* 
   width: 376px;
   height: 42px;
   left: 612px;
-  top: 969px;
+  top: 969px; */
 
   font-size: 36px;
   line-height: 1.16;
@@ -231,11 +247,6 @@ address {
 }
 
 .feature-title {
-  width: 270px;
-  height: 16px;
-  left: 215px;
-  top: 774px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -246,11 +257,6 @@ address {
 }
 
 .features .text {
-  width: 270px;
-  height: 75px;
-  left: 215px;
-  top: 800px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -262,10 +268,10 @@ address {
 /* Work */
 
 .work .title {
-  width: 377px;
+  /* width: 377px;
   height: 42px;
   left: 612px;
-  top: 969px;
+  top: 969px; */
 
   font-size: 36px;
   line-height: 1.16;
@@ -276,11 +282,15 @@ address {
 
 /* Team */
 
+.team {
+  background-color: var(--secondary-background-color);
+}
+
 .team .title {
-  width: 376px;
+  /* width: 376px;
   height: 42px;
   left: 612px;
-  top: 969px;
+  top: 969px; */
 
   font-size: 36px;
   line-height: 1.16;
@@ -305,27 +315,27 @@ address {
 }
 
 .product-designer {
-  width: 152px;
-  left: 275px;
+  /* width: 152px;
+  left: 275px; */
 }
 .frontend-developer {
-  width: 110px;
-  left: 596px;
+  /* width: 110px;
+  left: 596px; */
 }
 .marketing {
-  width: 138px;
-  left: 882px;
+  /* width: 138px;
+  left: 882px; */
 }
 .designer {
-  width: 135px;
-  left: 1183px;
+  /* width: 135px;
+  left: 1183px; */
 }
 
 .team .text {
-  width: 148px;
+  /* width: 148px;
   height: 19px;
   left: 285px;
-  top: 1954px;
+  top: 1954px; */
 
   font-size: 16px;
   line-height: 1.18;
@@ -345,10 +355,17 @@ address {
   color: var(--secondary-text-color);
   border-radius: 4px;
 
-  width: 145px;
-  height: 38px;
+  /* width: 145px;
+  height: 38px; */
 
   text-align: center;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border: none;
 }
 .button:hover {
   background-color: var(--accent-color);
@@ -368,28 +385,28 @@ address {
 */
 
 .button.all {
-  width: 73px;
-  left: 495px;
+  /* width: 73px;
+  left: 495px; */
 }
 
 .button.site {
-  width: 128px;
-  left: 576px;
+  /* width: 128px;
+  left: 576px; */
 }
 
 .button.app {
-  width: 145px;
-  left: 712px;
+  /* width: 145px;
+  left: 712px; */
 }
 
 .button.design {
-  width: 103px;
-  left: 865px;
+  /* width: 103px;
+  left: 865px; */
 }
 
 .button.marketing {
-  width: 130px;
-  left: 976px;
+  /* width: 130px;
+  left: 976px; */
 }
 
 .button.marketing:hover,
@@ -420,11 +437,11 @@ address {
 
 /* Projects */
 
-.projects .title {
-  width: 322px;
+.title {
+  /* width: 322px;
   height: 36px;
   left: 239px;
-  top: 576px;
+  top: 576px; */
 
   font-family: "Roboto";
   font-style: normal;
@@ -444,12 +461,7 @@ address {
   visibility: hidden;
 }
 
-.projects p {
-  width: 322px;
-  height: 30px;
-  left: 239px;
-  top: 616px;
-
+p {
   line-height: 30px;
 
   letter-spacing: 0.03em;
@@ -467,6 +479,11 @@ address {
 }
 
 .address .link {
+  /* font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em; */
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
